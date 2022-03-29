@@ -6,5 +6,5 @@ This was made in week 2 of the bootcamp, to begin with the initial steeps in git
 This is the landing page of the project of the Radium Rocket bootcamp.
 ## Author
 [Ana Murinigo](https://github.com/AnaMurinigo)
-##Technologies
+## Technologies
 *HTML
