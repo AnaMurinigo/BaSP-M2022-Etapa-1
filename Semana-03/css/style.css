@@ -1,7 +1,20 @@
 
-.block{
+.cart{
     float:left;
     width:50%;
     box-sizing: border-box;
     /* En el video de radium muestra display: inline-block instead of float. Witch one should I choose and why? */
+}
+.carts-container{
+    /* border-bottom: px; */
+    
+}
+aside{
+/* position: fixed */
+}
+header{
+/* fixed */
+}
+.burger{
+    /* fixed */
 }
