@@ -1,4 +1,35 @@
+header{
+    position: fixed;
+    width: 1455px;
+    height: 96px;
+    background-color:#373867 ;
+}
+aside{
+    display: inline-block;
+    position: fixed;
+    width: 343px;
+    height: 928px;
+    top: 96px;
+    background-color: #D9D9E2;
+}
+.burger{
+    position: fixed;
+}
+main{
+    display: inline-block;
+    margin-left: 343px;
+    margin-top: 96px;
 
+}
+footer{
+    display: inline-block;
+    margin-bottom: 0px;
+    width: 1455px;
+    height: 50px;
+    background-color: #D9D9E2
+    
+    
+}
 .cart{
     float:left;
     width:50%;
@@ -7,15 +38,6 @@
 }
 .carts-container{
     /* border-bottom: px; */
+    display: inline-block;
     
-}
-
-aside{
-/* position: fixed */
-}
-header{
-/* fixed */
-}
-.burger{
-    /* fixed */
 }
