@@ -1,3 +1,4 @@
+/* General structural styling */
 body{
     background-color:#fff;
     color:#373867;
@@ -9,7 +10,6 @@ header{
     width: 1455px;
     height: 69px;
     background-color:#373867;
-    /* z-index: ? */
 }
 aside{
     display: inline-block;
@@ -18,12 +18,12 @@ aside{
     height: 928px;
     top: 69px;
     background-color: #D9D9E2;
-    /* z-index: ? */
 }
 main{
     display: inline-block;
     margin-left: 343px;
     margin-top: 96px;
+    width: 1312px;
     /* width=1455-343 */
     /* z-index: ? */
 }
@@ -39,21 +39,34 @@ section{
     display:block;
     margin-left: 50px;
 }
-footer a{
-    display: inline-block;
-    width: 30px;
-    margin-left: 10px;
-    margin-right: 10px;
+/* General lettering properties */
+h1 {
+    font-weight: 700;
+    font-size: 40px;
+    color: #373867;
+  }
+  h2 {
+    font-weight: 700;
+    font-size: 30px;
+    color: #373867    
+  }
+  h3{
+    display:inline-block;
+    width:200px;
+    font-size:20px;
+    font-weight: 700;
+    color: #373867;
 }
-footer h3{
-    display: inline-block;
-    width: 100px;
-    text-align: center;
+  h4{
+    font-size: 14px;
+    font-weight: 700;
+    color: #373867;
 }
-.burger{
-    position: fixed;
-    margin-left:5px;
-}
+  p{
+      font-weight: 400;
+      color: #373867;
+  }
+/* header properties */
 span.radium{
     font-size: 46px;
     font-weight: bold;
@@ -70,13 +83,31 @@ span.rocket{
     top: 20px;
     left: 15px;
 }
+/* aside properties */
 span.menu, span.contact-us{
     font-size:30px;
-    font-weight: 700px;
+    font-weight: 700;
     font-style:bold;
     border-bottom: 5px solid #AACE9B;
     margin-left:10px;  
 }
+.list-style{
+    color: #373867;
+}
+.list-style ul li{
+    border-bottom: 3px solid #373867;
+}
+span.contact-us{
+    font-size: 30px;
+    font-weight: 700;
+
+}
+/* burger properties */
+.burger{
+    position: fixed;
+    margin-left:5px;
+}
+/* main properties */
 .estrella{
     display:inline-block;
     width:30px;
@@ -95,11 +126,7 @@ span.menu, span.contact-us{
     /* border-bottom: px; */
     display: inline-block;
 }
-h3{
-    display:inline-block;
-    width:200px;
-    font-size:20px;
-}
+
 .reloj {
     display:inline-block;
     position: relative;
@@ -108,11 +135,25 @@ h3{
     object-fit: cover;
     left: 10px;
     z-index: -1;
-  }
+}
   .main-text{
     display:inline-block;
     width: 400px;
     object-fit: cover;
     position: relative;
     left: 10px;
-  }
+}
+    /* footer properties */
+footer a{
+    display: inline-block;
+    width: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+footer h3{
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+}
+  
+  
