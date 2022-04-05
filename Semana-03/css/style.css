@@ -59,6 +59,7 @@ h1 {
     font-size:20px;
     font-weight: 700;
     color: #373867;
+    margin-bottom: 10px;
 }
   h4{
     font-size: 15px;
@@ -142,8 +143,10 @@ address ul li{
 }
 .card{
     float:left;
-    width:50%;
+    width:45%;
     box-sizing: border-box;
+    margin-bottom: 20px;
+    margin-left: 15px;
     /* En el video de radium muestra display: inline-block instead of float. Witch one should I choose and why? */
 }
 .cards-container{
