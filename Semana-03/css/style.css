@@ -48,7 +48,7 @@ h1 {
   h2 {
     font-weight: 700;
     font-size: 30px;
-    color: #373867    
+    color: #373867;
   }
   h3{
     display:inline-block;
@@ -126,7 +126,6 @@ span.contact-us{
     /* border-bottom: px; */
     display: inline-block;
 }
-
 .reloj {
     display:inline-block;
     position: relative;
@@ -143,6 +142,8 @@ span.contact-us{
     position: relative;
     left: 10px;
 }
+    /* Form */
+
     /* footer properties */
 footer a{
     display: inline-block;
@@ -155,5 +156,10 @@ footer h3{
     width: 100px;
     text-align: center;
 }
-  
+  /* Links properties */
+
+  a:link, a:visited,a:active{
+      text-decoration: none;
+      color: #373867;
+  }
   
