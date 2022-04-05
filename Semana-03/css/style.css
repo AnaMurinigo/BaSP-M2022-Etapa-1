@@ -3,9 +3,7 @@ body{
     color:#373867;
     font:normal 16px 'Roboto', sans-serif;
     line-height: 20px;
-   
 }
-
 header{
     position: fixed;
     width: 1455px;
@@ -22,7 +20,6 @@ aside{
     background-color: #D9D9E2;
     /* z-index: ? */
 }
-
 main{
     display: inline-block;
     margin-left: 343px;
@@ -38,31 +35,25 @@ footer{
     margin-left: 343px;
     background-color: #D9D9E2
 }
-
 section{
     display:block;
     margin-left: 50px;
 }
-
 footer a{
     display: inline-block;
     width: 30px;
     margin-left: 10px;
     margin-right: 10px;
 }
-
 footer h3{
     display: inline-block;
     width: 100px;
     text-align: center;
 }
-
-
 .burger{
     position: fixed;
     margin-left:5px;
 }
-
 span.radium{
     font-size: 46px;
     font-weight: bold;
@@ -84,8 +75,7 @@ span.menu, span.contact-us{
     font-weight: 700px;
     font-style:bold;
     border-bottom: 5px solid #AACE9B;
-    margin-left:10px;
-   
+    margin-left:10px;  
 }
 .estrella{
     display:inline-block;
@@ -93,6 +83,7 @@ span.menu, span.contact-us{
     object-fit: cover;
     position:relative;
     top:8px;
+    z-index: -1;
 }
 .card{
     float:left;
@@ -109,7 +100,6 @@ h3{
     width:200px;
     font-size:20px;
 }
-
 .reloj {
     display:inline-block;
     position: relative;
@@ -125,6 +115,4 @@ h3{
     object-fit: cover;
     position: relative;
     left: 10px;
-    z-index: -1;
-
   }
