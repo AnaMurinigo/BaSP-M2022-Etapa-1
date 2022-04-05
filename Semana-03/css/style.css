@@ -1,5 +1,5 @@
 body{
-    background-color:#f4f4f4;
+    background-color:#fff;
     color:#373867;
     font:normal 16px 'Roboto', sans-serif;
     line-height: 20px;
@@ -22,24 +22,38 @@ aside{
     background-color: #D9D9E2;
     /* z-index: ? */
 }
-.burger{
-    position: fixed;
-}
+
 main{
     display: inline-block;
     margin-left: 343px;
     margin-top: 96px;
     /* width=1455-343 */
     /* z-index: ? */
-
 }
 /* I have to put all the main content in a div with the same length as the header and also be careful with the bars icon and the rest of the content. Maybe another div */
 footer{
     display: inline-block;
-    margin-bottom: 0px;
     width: 1455px;
     height: 50px;
+    margin-left: 343px;
     background-color: #D9D9E2
+}
+
+section{
+    display:block;
+    margin-left: 50px;
+}
+
+footer a{
+    display: inline-block;
+    width: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+footer h3{
+    display: inline-block;
+    width: 100px;
+    text-align: center;
 }
 .cart{
     float:left;
@@ -50,7 +64,11 @@ footer{
 .carts-container{
     /* border-bottom: px; */
     display: inline-block;
-    
+}
+
+.burger{
+    position: fixed;
+    margin-left:5px;
 }
 
 span.radium{
@@ -68,4 +86,25 @@ span.rocket{
     position: relative;
     top: 20px;
     left: 15px;
+}
+span.menu, span.contact-us{
+    font-size:30px;
+    font-weight: 700px;
+    font-style:bold;
+    border-bottom: 5px solid #AACE9B;
+    margin-left:10px;
+   
+}
+.estrella{
+    display:inline-block;
+    width:30px;
+    object-fit: cover;
+    position:relative;
+    top:8px;
+
+}
+h3{
+    display:inline-block;
+    width:200px;
+    font-size:20px;
 }
