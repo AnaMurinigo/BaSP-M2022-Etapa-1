@@ -138,67 +138,74 @@
                 </div>
             </section>  
             <h2>Ask information</h2>
-            <form action="process.php" method="POST">
-                <div>
-                    <input type="text" name="name" placeholder="Name">
-                    <input type="email" name="email" placeholder="Email">
-                </div>
-                <div>
-                    <label>Contact area:</label>
-                    <input type="radio" name="humanResources">
-                    <label>Human Resources</label>
-                    <input type="radio" name="systems">
-                    <label>Systems</label>
-                    <input type="radio" name="commercialization">
-                    <label>Commercialization</label>
-                </div>
-                <div>
-                    <textarea name="message" placeholder="Please enter your message here"></textarea>
-                    <input type="submit" name="submit" value="Send Message">
-                    <button>Reset</button>
-                </div>
-            </form>
+            <div class="cards-container">
+                <form action="process.php" method="POST">
+                    <div>
+                        <input type="text" name="name" placeholder="Name">
+                        <input type="email" name="email" placeholder="Email">
+                    </div>
+                    <div>
+                        <label>Contact area:</label>
+                        <input type="radio" name="humanResources">
+                        <label>Human Resources</label>
+                        <input type="radio" name="systems">
+                        <label>Systems</label>
+                        <input type="radio" name="commercialization">
+                        <label>Commercialization</label>
+                    </div>
+                    <div>
+                        <textarea name="message" placeholder="Please enter your message here"></textarea>
+                        <input type="submit" name="submit" value="Send Message">
+                        <button>Reset</button>
+                    </div>
+                </form>
+            </div>
         </section>
         <section>
             <h2>About us</h2>
-            <p>
-                <strong>A group of students trying to get their first IT experience</strong>
-            </p>
-            <p>
-                Only one week ago we started our journey in the Radium Rocket bootcamp, under the
-                coaching of Agustin Carthery.
-            </p>
-            <img src="img\radium-rocket-logo.png" alt="Radium rocket Logo">
+            <div class="cards-container"> 
+                <p>
+                    <strong>A group of students trying to get their first IT experience</strong>.         Only one week ago we started our journey in the Radium Rocket bootcamp, under the
+                    coaching of Agustin Carthery.
+                </p>
+                <img src="img\radium-rocket-logo.png" alt="Radium rocket Logo">
+            </div>
         </section>
             
         <section>
-            <h4>Products</h4>
-            <nav>
-                <ol>
-                    <li> <a href="#">Features</a></li>
-                    <li> <a href="#">Downloads</a></li>
-                    <li> <a href="#">Integrations</a> </li>
-                    <li> <a href="#">Extras</a></li>
-                </ol>
-            </nav>
-            <h4>Company</h4>
-            <nav>
-                <ol>
-                    <li><a href="#">About us</a></li>
-                    <li><a href="#">Clients</a></li>
-                    <li><a href="#">Resources</a></li>
-                    <li><a href="#">Blogs</a></li>
-                </ol>
-            </nav>
-            <h4>Support</h4>
-            <nav>
-                <ol>
-                    <li><a href="#">Help</a></li>
-                    <li><a href="#">Tutorials</a></li>
-                    <li><a href="#">API</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ol>
-            </nav>
+            <div class="block">
+                <h4>Products</h4>
+                <nav>
+                    <ol>
+                        <li> <a href="#">Features</a></li>
+                        <li> <a href="#">Downloads</a></li>
+                        <li> <a href="#">Integrations</a> </li>
+                        <li> <a href="#">Extras</a></li>
+                    </ol>
+                </nav>
+            </div>
+            <div class="block">
+                <h4>Company</h4>
+                <nav>
+                    <ol>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Clients</a></li>
+                        <li><a href="#">Resources</a></li>
+                        <li><a href="#">Blogs</a></li>
+                    </ol>
+                </nav>
+            </div>
+            <div class="block">
+                <h4>Support</h4>
+                <nav>
+                    <ol>
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">Tutorials</a></li>
+                        <li><a href="#">API</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ol>
+                </nav>
+            </div>
         </section>
     </main>
     <footer>

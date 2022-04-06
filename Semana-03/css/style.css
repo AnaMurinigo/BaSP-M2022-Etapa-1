@@ -23,14 +23,14 @@ main{
     display: inline-block;
     margin-left: 343px;
     margin-top: 96px;
-    width: 1312px;
+    width: 1112px;
     /* width=1455-343 */
     /* z-index: ? */
 }
 /* I have to put all the main content in a div with the same length as the header and also be careful with the bars icon and the rest of the content. Maybe another div */
 footer{
     display: inline-block;
-    width: 1455px;
+    width: 1112px;
     height: 50px;
     margin-left: 343px;
     background-color: #D9D9E2
@@ -140,6 +140,7 @@ address ul li{
     position:relative;
     top:8px;
     z-index: -1;
+    /* I just realized that the stars is on the left of the card and not the h3. If I don't think i have the time to change it right now */
 }
 .card{
     float:left;
@@ -149,10 +150,12 @@ address ul li{
     margin-left: 15px;
     /* En el video de radium muestra display: inline-block instead of float. Witch one should I choose and why? */
 }
+
 .cards-container{
     /* border-bottom: px; */
     display: inline-block;
     width:900px;
+    border-bottom: 1px solid #373867;
 }
 .reloj {
     display:inline-block;
@@ -180,7 +183,16 @@ address ul li{
 }
 
     /* Form */
-
+    /*About us*/
+    
+    /* last section */
+    .block{
+        float:left;
+    width:30%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    }
     /* footer properties */
 footer a{
     display: inline-block;
@@ -190,8 +202,8 @@ footer a{
 }
 footer h3{
     display: inline-block;
-    width: 100px;
-    text-align: center;
+    width: 200px;
+    margin-left: 300px;
 }
   /* Links properties */
 
