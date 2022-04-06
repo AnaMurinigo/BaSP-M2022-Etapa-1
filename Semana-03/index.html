@@ -136,27 +136,30 @@
                         </p>
                     </div>
                 </div>
-            </section>  
+            </section> 
+            <section> 
             <h2>Ask information</h2>
             <div class="cards-container">
                 <form action="process.php" method="POST">
                     <div>
-                        <input type="text" name="name" placeholder="Name">
-                        <input type="email" name="email" placeholder="Email">
+                        <input class="personal-info" type="text" name="name" placeholder="Name">
+                        <input class="personal-info" type="email" name="email" placeholder="Email">
                     </div>
                     <div>
-                        <label>Contact area:</label>
+                        <p>Contact area:</p>
+                    </div>
+                    <div class="options">
                         <input type="radio" name="humanResources">
                         <label>Human Resources</label>
                         <input type="radio" name="systems">
                         <label>Systems</label>
-                        <input type="radio" name="commercialization">
+                        <input  type="radio" name="commercialization">
                         <label>Commercialization</label>
                     </div>
                     <div>
-                        <textarea name="message" placeholder="Please enter your message here"></textarea>
-                        <input type="submit" name="submit" value="Send Message">
-                        <button>Reset</button>
+                        <textarea class="textarea" name="message" placeholder="Please enter your message here"></textarea>
+                        <input class="submit" type="submit" name="submit" value="Send Message">
+                        <button class="reset">Reset</button>
                     </div>
                 </form>
             </div>
