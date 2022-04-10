@@ -1,13 +1,14 @@
 header{
     position:fixed;
     display:inline-flex;
-    width:90%;
+    width:100%;
     /* it's only temporal to see if it is working, later on i'm going to change it to 100%*/
     height: 69px;
     background-color:#373867;
     font-size: 46px;
     align-items: center;
-
+    min-width:max-content;
+    /* que onda, no me va a quedar espacio para el celu, achico la letra? */
 }
 span.radium{
     font-weight: bold;
@@ -17,4 +18,7 @@ span.radium{
 span.rocket{
     font-weight: 100;
     color:#AACE9B;
+}
+.burguer{
+    display:none;
 }

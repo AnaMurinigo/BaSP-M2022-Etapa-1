@@ -1,7 +1,9 @@
 body{
-    background-color:#fff;
+    display:flex;
+    flex-direction: column;
+    background-color: #fff;
     color:#373867;
     font:normal 14px 'Roboto', sans-serif;
     line-height: 1.5em;
-    
 }
+
