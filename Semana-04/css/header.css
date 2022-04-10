@@ -2,13 +2,12 @@ header{
     position:fixed;
     display:inline-flex;
     width:100%;
-    /* it's only temporal to see if it is working, later on i'm going to change it to 100%*/
-    height: 69px;
-    background-color:#373867;
-    font-size: 46px;
+    height: 15%;
+    background-color: #373867;
+    font-size: 3em;
     align-items: center;
     min-width:max-content;
-    /* que onda, no me va a quedar espacio para el celu, achico la letra? */
+    z-index: 1;
 }
 span.radium{
     font-weight: bold;
@@ -19,6 +18,8 @@ span.rocket{
     font-weight: 100;
     color:#AACE9B;
 }
-.burguer{
+.burger{
     display:none;
+    color:#AACE9B;
+    font-size: 0.75em;
 }
