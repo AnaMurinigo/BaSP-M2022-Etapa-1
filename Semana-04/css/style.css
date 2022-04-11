@@ -12,7 +12,8 @@ main{
     text-decoration: none;
     color: #373867;
 }
- @media only screen and (max-width:780px){
+
+ @media screen and (max-width:780px){
     aside{
         display: none;
     } 
@@ -20,7 +21,7 @@ main{
         font-size: 12px ;
     }
     .burger{
-        display: inline-block;
+        display: inline-block !important;
     }
     .asidemain aside{
         display:none;
