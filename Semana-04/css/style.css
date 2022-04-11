@@ -12,14 +12,17 @@ main{
     text-decoration: none;
     color: #373867;
 }
- @media(max-width:780px){
-    .aside{
+ @media only screen and (max-width:780px){
+    aside{
         display: none;
     } 
-    .body{
+    body{
         font-size: 12px ;
     }
     .burger{
         display: inline-block;
+    }
+    .asidemain aside{
+        display:none;
     }
 } 
