@@ -1,6 +1,6 @@
 main{
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     width: 100%;
 }
 .main-section-container{
@@ -12,7 +12,7 @@ main{
 .reloj {
     display:inline-flex;
     width: 50%;
-    object-fit: cover;
+    object-fit:cover;
     align-items: center;
     justify-content: center;
 }
@@ -27,3 +27,25 @@ main{
 .main-text p{
     margin-bottom: 1.5em;
 }
+.section-container{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-bottom: 5%;
+    height: 400px;
+    flex-wrap:wrap;
+}
+
+.cards h3{
+    align-self:flex-start;
+    margin-left:3%;
+}
+.cards-container{
+    display:flex;
+    background-color: aqua;
+}
+.card{
+    width:50%;
+}
+
+

@@ -9,15 +9,15 @@ body{
 /* General lettering properties */
 h1 {
     font-weight: 700;
-    font-size: 60px;
+    font-size: 2.4em;
     color: #373867;
-    margin-bottom: 80px;
+    margin-bottom: 1.5em;
   }
   h2 {
     font-weight: 700;
     font-size: 2.14em;
     color: #373867;
-    margin-bottom: 40px;
+    margin-bottom: 4em;
   }
   h3{
     display:inline-block;
@@ -37,7 +37,6 @@ h1 {
       color: #373867;
       font-size:0.86em;
   }
-
 /* Space of every part */
 header{
     display: flex;
