@@ -11,7 +11,7 @@ main{
 }
 .reloj {
     display:inline-flex;
-    width: 50%;
+    width: 40%;
     object-fit:cover;
     align-items: center;
     justify-content: center;
@@ -28,27 +28,39 @@ main{
     margin-bottom: 1.5em;
 }
 .section-container{
+    height: auto;
     display:flex;
+    flex-direction: column;
     justify-content:space-between;
     align-items: center;
     margin-bottom: 5%;
-    height: 400px;
-    flex-wrap:wrap;
 }
 
+.cards-container{
+    width: 100%;
+    background-color: coral;
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.card{
+    /* display:flex; */
+    /* flex-direction: column; */
+    /* flex:2 0 250px; */
+    width:45%;
+    background-color: darkcyan;
+    flex-basis: 250px;
+    margin:2em;
+}
 .cards h3{
     align-self:flex-start;
     margin-left:3%;
 }
-.cards-container{
-    display:flex;
-    background-color: aqua;
-}
-.card{
-    width:50%;
-}
 
 
+.section-container img{
+
+}
  /* Form */
  /* .personal-info{
     display: inline-block;

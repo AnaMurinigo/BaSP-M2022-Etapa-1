@@ -12,7 +12,36 @@ main{
     text-decoration: none;
     color: #373867;
 }
-
+/* General lettering properties */
+h1 {
+    font-weight: 700;
+    font-size: 2.4em;
+    color: #373867;
+    margin-bottom: 1.5em;
+  }
+  h2 {
+    font-weight: 700;
+    font-size: 2.14em;
+    color: #373867;
+    margin-bottom: 4em;
+  }
+  h3{
+    display:inline-block;
+    font-size:1.3em;
+    font-weight: 700;
+    color: #373867;
+    margin-bottom: 10px;
+}
+  h4{
+    font-size: 1em;
+    font-weight: 700;
+    color: #373867;
+}
+  p{
+      font-weight: 400;
+      color: #373867;
+      font-size:0.86em;
+  }
  @media screen and (max-width:780px){
     aside{
         display: none;
