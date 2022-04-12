@@ -1,3 +1,6 @@
+.main-footer{
+    flex:5;
+}
 main{
     display: flex;
     /* flex-direction: column; */
@@ -5,24 +8,29 @@ main{
 }
 .main-section-container{
     display:flex;
-    justify-content:space-between;
+    justify-content:space-around;
+    padding:1em;
     align-items: center;
     margin-bottom: 5%;
+    flex-wrap: wrap;
+    width:100%;
 }
 .reloj {
-    display:inline-flex;
-    width: 40%;
+    display:flex;
+    width: 50%;
     object-fit:cover;
-    align-items: center;
-    justify-content: center;
+    flex-basis:250px;
 }
+
   .main-text{
-    display:inline-flex;
+    display:flex;
     flex-direction: column;
     width: 30%;
     margin-left:3%;
     font-size: 1.43em;
     font-weight: 400px;
+    flex-basis:250px;
+    background-color: lightgrey;
 }
 .main-text p{
     margin-bottom: 1.5em;
@@ -47,10 +55,11 @@ main{
     /* display:flex; */
     /* flex-direction: column; */
     /* flex:2 0 250px; */
-    width:45%;
+    width:100%;
+    flex:2 0 230px;
     background-color: darkcyan;
-    flex-basis: 250px;
     margin:2em;
+    min-width:35%;
 }
 .cards h3{
     align-self:flex-start;
@@ -103,3 +112,22 @@ main{
     font:normal 14px 'Roboto', sans-serif;
     border-radius: 3px;
 } */
+/* About us section */
+
+/* Last section */
+.links-container{
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+}
+.block{
+    width:100%;
+    flex:2 0 230px;
+    background-color: darkcyan;
+    margin:2em;
+    min-width:25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
