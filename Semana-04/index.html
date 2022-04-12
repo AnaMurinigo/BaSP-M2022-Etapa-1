@@ -20,13 +20,9 @@
     </head>
     <body class="border">
         <header class="border">
-            <div class="header-container">
-                <a href="#">
-                    <span class="radium">Radium</span>
-                    <span class="rocket">Rocket</span>
-                </a>
+                <span class="radium">Radium</span>
+                <span class="rocket">Rocket</span>
                 <span class="burger" href=""><i class="fa-solid fa-bars"></i></span>
-            </div>
         </header>
         <div class="asidemain border">
             <aside class="border">
@@ -163,31 +159,39 @@
                         </section>
                         <section class="border">
                             <h2>Ask information</h2>
-                            <div class="cards-container border">
-                                <form action="process.php" method="POST">
-                                    <div>
-                                        <input class="personal-info border" type="text" name="name" placeholder="Name">
-                                        <input class="personal-info border" type="email" name="email" placeholder="Email">
+                            <form action="process.php" method="POST">
+                                <div class="ask-info-container border">
+                                    <div class="personal-info">
+                                        <input class="fill-in" type="text" name="name" placeholder="Name">
+                                        <input class="fill-in" type="email" name="email" placeholder="Email">
                                     </div>
-                                    <div>
+                                    <div class="contact-area">
                                         <p>Contact area:</p>
+                                        <div class="options border">
+                                            <div class="option">
+                                                <input type="radio" name="humanResources">
+                                                <label>Human Resources</label>
+                                            </div>
+                                            <div class="option">
+                                                <input type="radio" name="systems">
+                                                <label>Systems</label>
+                                            </div>
+                                            <div class="option">
+                                                <input type="radio" name="commercialization">
+                                                <label>Commercialization</label>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="options border">
-                                        <input type="radio" name="humanResources">
-                                        <label>Human Resources</label>
-                                        <input type="radio" name="systems">
-                                        <label>Systems</label>
-                                        <input type="radio" name="commercialization">
-                                        <label>Commercialization</label>
-                                    </div>
-                                    <div>
-                                        <textarea class="textarea border" name="message"
-                                            placeholder="Please enter your message here"></textarea>
+                                        <!-- <div class="textareadiv"> -->
+                                    <textarea class="textarea border" name="message"
+                                            placeholder="Please enter your messsdasage here" ></textarea>
+                                        <!-- </div> -->
+                                    <div class="buttons">
                                         <input class="submit border" type="submit" name="submit" value="Send Message">
                                         <button class="reset border">Reset</button>
                                     </div>
-                                </form>
-                            </div>
+                                </div>
+                            </form>
                         </section>
                         <section class="main-container border">
                             <h2>About us</h2>

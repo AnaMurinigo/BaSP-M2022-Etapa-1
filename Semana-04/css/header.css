@@ -1,19 +1,19 @@
 header{
-    display:inline-flex;
+    display: flex;
     width:100%;
     height: 15%;
     background-color: #373867;
     font-size: 3em;
     align-items: center;
-    /* min-width:max-content; */
+    min-width:max-content;
     flex-basis: 2em;
 }
-span.radium{
+.radium{
     font-weight: bold;
     color: #49A37B;
     margin-left: 0.5em;
 }
-span.rocket{
+.rocket{
     font-weight: 100;
     color:#AACE9B;
 }
