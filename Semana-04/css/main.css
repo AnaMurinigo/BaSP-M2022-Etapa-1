@@ -113,6 +113,31 @@ main{
     border-radius: 3px;
 } */
 /* About us section */
+.main-container{
+    display:flex;
+    padding:1em;
+    align-items:center;
+    justify-content: space-around;
+    margin-bottom: 5%;
+    flex-wrap: wrap;
+    width:100%;
+}
+.rocket-text{
+    display:flex;
+    flex-direction: column;
+    width: 30%;
+    margin-left:5%;
+    font-size: 1.43em;
+    flex-basis:250px;
+    background-color: lightgrey;
+}
+.rocket {
+    display:flex;
+    width: 50%;
+    object-fit:cover;
+    flex-basis:300px;
+}
+
 
 /* Last section */
 .links-container{
