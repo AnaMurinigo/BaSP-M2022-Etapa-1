@@ -113,7 +113,7 @@ main{
     border-radius: 3px;
 } */
 /* About us section */
-.main-container{
+.aboutus-container{
     display:flex;
     padding:1em;
     align-items:center;
