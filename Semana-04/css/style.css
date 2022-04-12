@@ -1,9 +1,3 @@
-body{
-    font-size: 14px;
-}
-main{
-    background-color: #fff;
-}
 .border{
     border: 1px solid black;
 }
@@ -12,7 +6,6 @@ main{
     text-decoration: none;
     color: #373867;
 }
-
 /* General lettering properties */
 h1 {
     font-weight: 700;
@@ -28,10 +21,10 @@ h1 {
   }
   h3{
     display:inline-block;
+    margin-bottom: 1em;
     font-size:1.3em;
     font-weight: 700;
     color: #373867;
-    margin-bottom: 1em;
 }
   h4{
     font-size: 1em;

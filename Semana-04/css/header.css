@@ -1,17 +1,17 @@
 header{
     display: flex;
+    align-items: center;
+    min-width:max-content;
+    flex-basis: 2em;
     width:100%;
     height: 15%;
     background-color: #373867;
     font-size: 3em;
-    align-items: center;
-    min-width:max-content;
-    flex-basis: 2em;
 }
 .radium{
+    margin-left: 0.5em;
     font-weight: bold;
     color: #49A37B;
-    margin-left: 0.5em;
 }
 .rocket{
     font-weight: 100;

@@ -1,17 +1,15 @@
 footer{
-    background-color: #D9D9E2;
-    height: 5em;
     display:flex;
     align-items: center;
     justify-content:space-around;
-
+    height: 5em;
+    background-color: #D9D9E2;
 }
-
 .trackgenix{
     display:flex;
     flex:1;
-    width: 50%;
     justify-content: center;
+    width: 50%;
 }
 .us-links{
    display:flex;
