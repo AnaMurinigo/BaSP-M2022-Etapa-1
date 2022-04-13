@@ -46,4 +46,12 @@ h1 {
     .asidemain aside{
         display:none;
     }
-} 
+}
+@media screen and (max-width:480px){
+    .options {
+        flex-direction: column;
+    }
+    .buttons{
+        justify-content: center;
+    }
+}
