@@ -9,3 +9,28 @@ Crear una variable “Age” que contenga un número entero entre 0 y 100 y mues
 “Adulto mayor” entre 61 y 75 años;
 “Anciano” si es mayor a 75 años.
 */
+var a= Math.random();
+if (a>=0.5) {
+    console.log("Greater than 0,5");
+} else {
+    console.log("Lower than 0,5");
+}
+var age=100*a;
+
+if (age<2) {
+    console.log("Bebé");
+} else if (age<12) {
+    console.log("Niño");
+  
+} else if (age<19) {
+    console.log("Adolescente");
+} else if (age<30) {
+    console.log("Joven");
+} else if (age<60) {
+    console.log("Adulto");
+} else if (age<75) {
+    console.log("Adulto mayor");
+} else {
+    console.log("Anciano");    
+}
+    
