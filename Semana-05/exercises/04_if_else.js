@@ -11,26 +11,25 @@ Crear una variable “Age” que contenga un número entero entre 0 y 100 y mues
 */
 var a= Math.random();
 if (a>=0.5) {
-    console.log("Greater than 0,5");
+   alert("Greater than 0,5");
 } else {
-    console.log("Lower than 0,5");
+    alert("Lower than 0,5");
 }
 var age=100*a;
-
 if (age<2) {
-    console.log("Bebé");
+    alert("Bebé");
 } else if (age<12) {
-    console.log("Niño");
+    alert("Niño");
   
 } else if (age<19) {
-    console.log("Adolescente");
+    alert("Adolescente");
 } else if (age<30) {
-    console.log("Joven");
+    alert("Joven");
 } else if (age<60) {
-    console.log("Adulto");
+    alert("Adulto");
 } else if (age<75) {
-    console.log("Adulto mayor");
+    alert("Adulto mayor");
 } else {
-    console.log("Anciano");    
+    alert("Anciano");    
 }
     
