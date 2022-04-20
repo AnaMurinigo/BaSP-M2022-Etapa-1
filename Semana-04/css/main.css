@@ -13,15 +13,14 @@ main {
 .main-section-container {
     display: flex;
     justify-content: space-around;
-    align-items: center;
     flex-wrap: wrap;
     padding: 1em;
     margin-bottom: 5%;
 }
 .reloj {
     display: flex;
-    flex-basis: 250px;
-    width: 50%;
+    flex-basis:200px;
+    width:40%;
     object-fit: cover;
 }
 .main-text {
@@ -51,6 +50,7 @@ main {
     width: 100%;
 }
 .card {
+    display:flex;
     flex: 2 0 230px;
     width: 100%;
     margin: 1em;
@@ -59,6 +59,17 @@ main {
 .cards h3 {
     align-self: flex-start;
     margin-left: 3%;
+}
+.star-text{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 250px;
+    margin-left: 3%;
+}
+.estrella{
+    width:5em;
+    height: 5em;
+    object-fit: cover;
 }
 /* Form */
 .ask-info-container {
@@ -153,16 +164,8 @@ option {
 /* Last section */
 .links-container {
     display: flex;
-    justify-content: space-between;
+    justify-content:space-around;
     flex-wrap: wrap;
     width: 100%;
-}
-.block {
-    display: flex;
-    flex-direction: column;
-    flex: 2 0 230px;
-    align-items: center;
-    width: 100%;
-    min-width: 25%;
-    margin: 2em;
+    margin-bottom: 2em;
 }

@@ -7,6 +7,10 @@ header{
     height: 15%;
     background-color: #373867;
     font-size: 3em;
+    justify-content: space-between;
+}
+.RR{
+    display:inline-flex;
 }
 .radium{
     margin-left: 0.5em;

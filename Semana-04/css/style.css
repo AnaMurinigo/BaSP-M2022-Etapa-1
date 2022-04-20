@@ -33,6 +33,20 @@ h1 {
       color: #373867;
       font-size:0.86em;
   }
+  body{
+    display:flex;
+    flex-direction: column;
+    background-color: #fff;
+    color:#373867;
+    font:normal 14px 'Roboto', sans-serif;
+    line-height: 1.5em;
+}
+/* Space of every part */
+.asidemain{
+    display: flex;
+    height: 70%;
+}
+/* Breakpoints */
  @media screen and (max-width:780px){
     aside{
         display: none;
