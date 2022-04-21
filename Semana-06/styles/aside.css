@@ -1,0 +1,42 @@
+aside{
+    display:flex;
+    flex-direction: column;
+    flex:1;
+    align-items: flex-start;
+    background-color: #D9D9E2;
+}
+/* aside properties */
+.menu{
+    display: flex;
+    align-items: center;
+    border-bottom: 5px solid #AACE9B;
+    margin-left:0.5em; 
+    margin-top: 80px;
+    padding-bottom: 5px;
+    font-size:2.14em;
+    font-weight: 700;
+    font-style:bold;
+}
+.list-style{
+    display:flex;
+}
+.list-style ul li{
+    display:flex;
+    width:300%;
+    margin-bottom: 1.5em;
+    padding-bottom: 1.5em;
+    border-bottom: 1px solid #373867;
+    margin-left: 1em;
+}
+aside p{
+    margin:1em;
+}
+address{
+    margin-left:0.5em;
+    margin-top: 1.5em;
+    font-weight: bold;
+}
+address ul li{
+    margin-bottom:1em;
+    margin-left: 0.5em;
+}
