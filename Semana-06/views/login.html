@@ -7,28 +7,33 @@
     <title>Trackgenix Log in</title>
     <link rel="stylesheet" href="../styles/reset.css">
     <link rel="stylesheet" href="../styles/header.css">
-    <link rel="stylesheet" href="../styles/login.css">
     <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/login.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/bc0fdfbb9f.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-        <div class="RR">
-        <span class="radium">Radium</span>
-        <span class="rocket">Rocket</span>
+        <div>
+            <span class="radium">Radium</span>
+            <span class="rocket">Rocket</span>
         </div>
-        <span class="burger" href=""><i class="fa-solid fa-bars"></i></span>
     </header>
     <main>
         <form>
             <h1>Log in</h1>
-            <label>Email</label>
-            <input class="fill-in" type="text" name="name" placeholder="Name">
-            <label> Password</label>
-            <input class="fill-in" type="email" name="email" placeholder="Email">
-            <button class="submit">Continue</button>
-            <a href="#" class="pwd-recovery">Password Recovery</a>
+            <div class="field">
+                <label>Email</label>
+                <input class="email" type="email" name="email" placeholder="Email">
+            </div>
+            <div class="field">
+                <label> Password</label>
+                <input class="pwd" type="password" name="pwd" placeholder="Password">
+            </div>
+            <div class="buttons">
+                <button class="submit">Continue</button>
+                <a href="#" class="pwd-recovery">Password Recovery</a>
+            </div>
         </form>
     </main>
     <footer>
