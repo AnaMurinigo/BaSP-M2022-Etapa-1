@@ -60,3 +60,8 @@ form{
 .pwd-recovery{
     margin-top:1em;
 }
+.error{
+    display:none;
+    color:#ff0000;
+    font-size: 0.7em;
+}

@@ -1,6 +1,59 @@
 // Getting the values for the elements
 var email=document.getElementById("email");
 var pwd=document.getElementById("pwd");
+var emailParagraph= document.querySelector('.email-error p');
+var pwdParagraph= document.querySelector('.pwd-error p');
+//Listener
+email.addEventListener("blur", emailBlur);
+email.addEventListener("focus", emailFocus);
+pwd.addEventListener("blur", pwdBlur);
+pwd.addEventListener("focus", pwdFocus);
 //Email validation
-
+    function emailBlur(e) {
+     e.preventDefault();
+    if(email.value===""){
+         emailParagraph.textContent="This field is mandatory";
+     } else if(!email.value.match(/[a-z0-9]+@[a-z]+\.[a-z]{2,3}/)){
+         emailParagraph.textContent="Please enter a valid email";
+     }
+ }
+    function emailFocus(){
+        emailParagraph.textContent="";
+    }
+    function pwdBlur(){
+        if(pwd.value.length<8){
+            pwdParagraph.textContent="Your password is too short.";
+        } else if(!(pwdValidate(pwd))){
+            pwdParagraph.textContent="Your password must have numbers and letters."
+        }
+        // console.log("entre a pwd blur");
+    }
+    function pwdValidate(){
+        var hasLetters=false;
+        var hasNumbers=false;
+        // console.log("pwd: "+pwd.value +"length"+ pwd.value.length);
+        // console.log("la contraseña ingresada tiene caracters: "+pwd.value.length);
+        for (var i=0; i<pwd.value.length; i++){
+            console.log("el caracter "+ i+" es "+ pwd.value.charAt(i));
+            if(pwd.value.charAt(i).toUpperCase() != pwd.value.charAt(i).toLowerCase()){
+                 hasLetters=true;
+             } else if(!isNaN(pwd.value.charAt(i))){
+                hasNumbers=true;
+             }
+        }
+        // console.log("hasLetters:" + hasLetters+"hasNumbers: "+hasNumbers);
+        return hasLetters&&hasNumbers;
+    }
+    function pwdFocus(){
+        pwdParagraph.textContent="";
+    }
+//Pwd validation
 //Events
+// function colorEmail(){
+//     email.style= "backgroundColor=pink"
+// }
+
+
+//Playing & studying
+// var title=document.getElementsByTagName('h1')[0];
+// title.innerHTML="estin";
