@@ -37,6 +37,7 @@ form{
     align-items: center;
     border-radius: 1em;
     border:solid #000 1px;
+    /* height: fit-content; */
 } 
 .field{
     display:flex;
