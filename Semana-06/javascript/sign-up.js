@@ -23,8 +23,8 @@ var addressError=document.querySelector("address.-error");
 var zipError=document.querySelector("zip.-error");
 var pwd2Error=document.querySelector(".pwd2-error");
 //Listener
-// firstName.addEventListener("blur", firstNameBlur);
-// firstName.addEventListener("focus", firstNameFocus);
+firstName.addEventListener("blur", firstNameBlur);
+firstName.addEventListener("focus", firstNameFocus);
 // lastName.addEventListener("blur", lastNameBlur);
 // lastName.addEventListener("focus",lastNameFocus);
 // dni.addEventListener("blur", dniBlur);
@@ -50,12 +50,10 @@ pwd2.addEventListener("focus", pwd2Focus);
 //Gral validations
 function notNull(something){
     if(something.value===""){
-        return "This field cannot be null";
+        return false;
+    } else{
+        return true;
     }
-}
-function firstNameBlur(){
-    firstNameError.textContent=notNull(firstName);
-    firstNameError.textContent=minLength(firstName,3);
 }
 function hasLetters(something){
     for (var i=0; i<something.value.length; i++){
@@ -64,6 +62,14 @@ function hasLetters(something){
     } }
     return false;
 }
+function isText(something){
+    for (var i=0; i<something.value.length; i++){
+        if(something.value.charAt(i).toUpperCase() == something.value.charAt(i).toLowerCase()){
+             return false;
+        } 
+    }
+    return true;
+}
 function hasNumbers(something){
  for(var i=0; i<something.value.length; i++){
         if(!isNaN(something.value.charAt(i))){
@@ -71,7 +77,6 @@ function hasNumbers(something){
         }
      } return false;
  }
-
 function hasMiddleSpace(something){
     var j=something.value.indexOf(" ");
     if(0<j<something.value.length){
@@ -79,13 +84,8 @@ function hasMiddleSpace(something){
     }
     return false;
 }
-function onlyLetters(something){
-    for (var i=0; i<something.value.length; i++){
-        if(something.value.charAt(i).toUpperCase() = something.value.charAt(i).toLowerCase()){return false;
-}}
-return true;
-}
-function minLength(something,minValue){
+
+function hasMinLength(something,minValue){
     if(something.value.length<minValue){
         return false;
     }
@@ -101,7 +101,7 @@ function maxLength(something, maxValue){
     function emailBlur() {
     if(email.value===""){
         emailError.textContent="This field cannot be null";
-        email.insertAdjacentElement("afterend",elem);
+        // email.insertAdjacentElement("afterend",elem);
      } else if(!email.value.match(/[a-z0-9]+@[a-z]+\.[a-z]{2,3}/)){
          emailError.textContent="Please enter a valid email";
         // firstName.parentNode.insertAdjacentHTML("afterend","Please enter a valid email");
@@ -112,22 +112,29 @@ function maxLength(something, maxValue){
     }
 //first name
 function firstNameBlur() {
-            if(firstName.value<4){
-                emailParagraph.textContent="The name is too short";
+            if(!notNull(firstName)){
+                firstNameError.textContent="The field cannot be empty";
+            }else if(!hasMinLength(firstName, 3)){
+                firstNameError.textContent="The name has too short";
+            }else if(!isText(firstName)) {
+                firstNameError.textContent="The name cannot have numbers or symbols";
+
+            } else{
+                var validateFirstName=true;
             }
         }
     function firstNameFocus(){
         firstNameError.textContent="";
     }
       //LastName
-      function lastNameBlur() {
-        if(firstName.value<4){
-            emailParagraph.textContent="The name is too short";
-        }
-    }
-    function lastNameFocus(){
-        lastNameError.textContent="";
-    }
+    //   function lastNameBlur() {
+    //     if(firstName.value<4){
+    //         emailParagraph.textContent="The name is too short";
+    //     }
+    // }
+    // function lastNameFocus(){
+    //     lastNameError.textContent="";
+    // }
     function dniFocus(){
         dniError.textContent="";
     }

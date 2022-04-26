@@ -49,7 +49,7 @@ form{
     flex-direction: column;
     margin:1em;
 }
-.submit{
+.submit, .cancel{
     height: 3em;
     margin: 1em;
     border-radius: 3px;
