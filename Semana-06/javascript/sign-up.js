@@ -37,7 +37,8 @@ var pwd2Error=document.querySelector(".pwd2-error");
 // tel.addEventListener("focus", telFocus);
 // address.addEventListener("blur", addressBlur);
 // address.addEventListener("focus", addressFocus);
-email.addEventListener("blur", emailBlur);
+//email.onblur(emailBlur); 
+email.addEventListener("blur", emailBlur);//Está siempre escuchando
 email.addEventListener("focus", emailFocus);
 // zip.addEventListener("blur", zipBlur);
 // zip.addEventListener("focus", zipFocus);
@@ -54,6 +55,7 @@ function notNull(something){
 }
 function firstNameBlur(){
     firstNameError.textContent=notNull(firstName);
+    firstNameError.textContent=minLength(firstName,3);
 }
 function hasLetters(something){
     for (var i=0; i<something.value.length; i++){
@@ -62,13 +64,13 @@ function hasLetters(something){
     } }
     return false;
 }
-// function hasNumbers(something){
-//     for(var i=0; i<something.value.length; i++){
-//         if(!isNaN(something.value.charAt(i)){
-//             return true;}
-//     }
-//     return false;
-// }
+function hasNumbers(something){
+ for(var i=0; i<something.value.length; i++){
+        if(!isNaN(something.value.charAt(i))){
+            return true;
+        }
+     } return false;
+ }
 
 function hasMiddleSpace(something){
     var j=something.value.indexOf(" ");

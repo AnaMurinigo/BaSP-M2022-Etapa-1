@@ -9,6 +9,7 @@ Week 5: Introduction to Javascript. Resolution of five exercises.
 You can check this ones here:
 https://anamurinigo.github.io/BaSP-M2022-Etapa-1/Semana-05/index.html
 Week 6: We develop the Login and Sign up views, implementing validations.
+https://anamurinigo.github.io/BaSP-M2022-Etapa-1/Semana-05/views/index.html from there you can navigate to login and signup!
 
 ```
 This is the landing page of the project of the Radium Rocket bootcamp.
