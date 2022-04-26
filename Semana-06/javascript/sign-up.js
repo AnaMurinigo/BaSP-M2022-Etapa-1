@@ -6,7 +6,7 @@ var dni = document.getElementById("dni");
 var city = document.getElementById("city");
 var birthdate = document.getElementById("birthdate");
 var tel = document.getElementById("tel");
-var address = document.getElementById("adrress");
+var address = document.getElementById("address");
 var email = document.getElementById("email");
 var zip = document.getElementById("zip");
 var pwd = document.getElementById("pwd");
@@ -86,8 +86,8 @@ function hasNumbers(something) {
   return false;
 }
 function hasMiddleSpace(something) {
-  var j = something.value.indexOf(" ");
-  if (0 < j < something.value.length) {
+  var j = something.value.trim().indexOf(" ");
+  if (0 < j && j < something.value.length-1) {
     return true;
   }
   return false;
@@ -107,7 +107,7 @@ function maxLength(something, maxValue) {
 }
 function isLegal(something){
     var inputDate=new Date(something.value);
-    var dateNow=new Date(Date.now);
+    var dateNow=new Date(Date.now());
     return new Date(dateNow-inputDate).getFullYear()-1970>=18;
 }
 //Email validation
@@ -155,8 +155,6 @@ function lastNameFocus() {
 }
 //DNI
 function dniBlur() {
-  var test = dni.value;
-  console.log(!notNull(test));
   if (!notNull(dni)) {
     dniError.textContent = "The field cannot be empty";
   } else if (!hasMinLength(dni, 7)) {
@@ -210,7 +208,7 @@ function telFocus() {
 function addressBlur(){
     if(!hasMinLength(address, 5)){
         addressError.textContent="The address is too short";
-    } else if(0<hasMiddleSpace(address.trim())<address.value.length){
+    } else if(!hasMiddleSpace(address)){
         addressError.textContent="It has to have a middle space";
     } else{
         var validateAddress=true;
