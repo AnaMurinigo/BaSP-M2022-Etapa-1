@@ -70,7 +70,9 @@ birthdate.onblur=birthdateBlur;
 birthdate.onfocus=birthdateFocus;
 function birthdateBlur(){
   birthdateValidator=false;
-    if(!isLegal(birthdate)){
+  if(!notNull(birthdate)){
+    birthdateError.textContent="Please complete a valid date";
+  }else if(!isLegal(birthdate)){
         birthdateError.textContent="You must be older than 18"
     }
     else{
