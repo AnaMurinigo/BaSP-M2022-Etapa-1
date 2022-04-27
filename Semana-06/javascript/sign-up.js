@@ -162,7 +162,6 @@ function zipFocus() {
 var email = document.getElementById("email");
 var emailError = document.querySelector(".email-error");
 var emailValidator=false;
-email.onblur=emailBlur; //Está siempre escuchando
 email.onfocus=emailFocus;
 function emailBlur() {
   emailValidator=false;
@@ -300,9 +299,11 @@ submit.onclick=function(e){
     "\nLast name" + lastName.value
    + "\nDNI: "+ dni.value + "\nDate of birth: "+ birthdate.value +"\nTelephone: "+ tel.value + "\nAddress: "+ address.value+ "\nCity: "+ city.value + "\nPostal Code: " + zip.value + "\nEmail: "+ email.value 
     );
-    //I know that i'm not printing the password value. Even though it is on the problem. i believe is not ment for us to print it, if this is not the case, please let me know so I can correct this.
+    //I know that i'm not printing the password value. Even though it is on the problem. i believe is not ment for us to print it, if this is not the case, please let me know so I can correct it.
   }
   else{
     alert("You have to correctly compelete all the fields to sign up");
   }
 }
+//TODO: Change alert for modal, and with the accept button take the user to de Log in Page.
+//TODO: Try to use arrays to write less code. If it makes sense, because maybe later on with POO we can generalice some of the code...

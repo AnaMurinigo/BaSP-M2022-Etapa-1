@@ -62,3 +62,5 @@ submit.onclick = function (e) {
     alert("You have to correctly compelete all the fields to log in");
   }
 };
+//TODO: Change alert for modal, and -if the data is correct- take after 1 sec the user to the Home Page.
+//TODO: Leave the print password in the two alerts or neither one. 
