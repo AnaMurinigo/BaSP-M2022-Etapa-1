@@ -14,7 +14,7 @@ function firstNameBlur() {
   } else if (!isText(firstName)) {
     firstNameError.textContent = "The name cannot have numbers or symbols";
   } else {
-    validateFirstName = true;
+    firstNameValidator = true;
   }
 }
 function firstNameFocus() {
@@ -288,4 +288,19 @@ function isLegal(something){
     var inputDate=new Date(something.value);
     var dateNow=new Date(Date.now());
     return new Date(dateNow-inputDate).getFullYear()-1970>=18;
+}
+//SUBMIT BUTTON
+var submit=document.getElementById("submit-btn");
+submit.onclick=function(e){
+  e.preventDefault();
+  if(firstNameValidator && lastNameValidator && dniValidator && birthdateValidator && telValidator && addressValidator && cityValidator && zipValidator && emailValidator && pwdValidator && pwd2Validator){
+    alert("First name: " + firstName.value +
+    "\nLast name" + lastName.value
+   + "\nDNI: "+ dni.value + "\nDate of birth: "+ birthdate.value +"\nTelephone: "+ tel.value + "\nAddress: "+ address.value+ "\nCity: "+ city.value + "\nPostal Code: " + zip.value + "\nEmail: "+ email.value 
+    );
+    //I know that i'm not printing the password value. Even though it is on the problem. i believe is not ment for us to print it, if this is not the case, please let me know so I can correct this.
+  }
+  else{
+    alert("You have to correctly compelete all the fields to sign up");
+  }
 }
