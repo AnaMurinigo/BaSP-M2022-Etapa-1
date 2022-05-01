@@ -74,9 +74,10 @@ function apiRequest(url){
   .then(function(jsonResponse){
     if (jsonResponse.success){
     alert(jsonResponse.msg +"\n Login successfull");
-    localStorage.setItem("Log-In", "Exitoso");
+    localStorage.setItem("Log-In", "Success");
     }else{
       alert(jsonResponse.msg+"\n Incorrect pwd or email");
+      localStorage.setItem("Log-In", "Failed");
     }
   })
   .catch(function(patata){
