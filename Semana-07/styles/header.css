@@ -1,0 +1,29 @@
+header{
+    display: flex;
+    align-items: center;
+    min-width:max-content;
+    flex-basis: 2em;
+    width:100%;
+    height: 15%;
+    background-color: #373867;
+    font-size: 3em;
+    justify-content: space-between;
+}
+.RR{
+    display:inline-flex;
+}
+.radium{
+    margin-left: 0.5em;
+    font-weight: bold;
+    color: #49A37B;
+}
+.rocket{
+    font-weight: 100;
+    color:#AACE9B;
+}
+.burger{
+    display:none;
+    color:#AACE9B;
+    font-size: 1em;
+    z-index: 1;
+}

@@ -1,0 +1,77 @@
+/* Links properties */
+a:link, a:visited,a:active{
+    text-decoration: none;
+    color: #373867;
+}
+/* General lettering properties */
+h1 {
+    font-weight: 700;
+    font-size: 2.4em;
+    color: #373867;
+    margin: 1em;
+    width: 100%;
+  }
+  body{
+    display:flex;
+    flex-direction: column;
+    color:#373867;
+    font:normal 14px 'Roboto', sans-serif;
+    line-height: 1.5em;
+}
+main{
+    display:flex;
+    justify-content: center;
+    min-height:93vh;
+    background-color: #C9C9D6;
+}
+form{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    min-width:350px;
+    width:65%;
+    max-width: 800px;
+    background-color: #fff;
+    margin-top: 4em;
+    margin-bottom: 4em;
+    align-items: center;
+    border-radius: 1em;
+    border:solid #000 1px;
+    /* height: fit-content; */
+} 
+.field{
+    display:flex;
+    flex: 2 0 235px;
+    width: 100%;
+    margin: 1em;
+    min-width: 35%;
+    flex-direction:column;
+    margin:0.7em;
+}
+.buttons{
+    display: flex;
+}
+.cancel, .sign-up{
+    height: 3em;
+    width: 5em;
+    margin: 1em;
+    border-radius: 3px;
+    background-color: #AACE9B;
+    font: normal 1em 'Roboto', sans-serif;
+}
+.pwd-recovery{
+    margin-top:1em;
+}
+/* Breakpoints */
+ @media screen and (max-width:780px){
+    body{
+        font-size: 12px;
+    }
+    /* .buttons{
+        justify-content: center;
+    } */
+}
+.error{
+    font-size: 0.7em;
+    color:#ff0000;
+}
