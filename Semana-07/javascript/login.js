@@ -57,10 +57,32 @@ var submit = document.getElementById("submit-btn");
 submit.onclick = function (e) {
   e.preventDefault();
   if (emailValidator && pwdValidator) {
-    alert("Email: " + email.value + "\nPassword: " + pwd.value);
+    //alert("Email: " + email.value + "\nPassword: " + pwd.value);
+    var url="https://basp-m2022-api-rest-server.herokuapp.com/login?email="+email.value+"&password="+ pwd.value;
+    apiRequest(url);
+    console.log(url);
   } else {
-    alert("You have to correctly compelete all the fields to log in");
+    alert("You have to correctly complete all the fields to log in");
   }
-};
+}
+function apiRequest(url){
+  fetch(url)
+  .then(function(response){
+    return response.json();
+  })
+  //Lo que entra al segundo then es lo que devuelve el primero y así sucesivamente
+  .then(function(jsonResponse){
+    if (jsonResponse.success){
+    alert(jsonResponse.msg +"\n Login successfull");
+    localStorage.setItem("Log-In", "Exitoso");
+    }else{
+      alert(jsonResponse.msg+"\n Incorrect pwd or email");
+    }
+  })
+  .catch(function(patata){
+    alert(patata.msg);
+  })
+}
+
 //TODO: Change alert for modal, and -if the data is correct- take after 1 sec the user to the Home Page.
 //TODO: Leave the print password in the two alerts or neither one. 
