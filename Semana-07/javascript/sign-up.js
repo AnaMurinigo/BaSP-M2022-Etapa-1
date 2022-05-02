@@ -299,11 +299,63 @@ submit.onclick=function(e){
     "\nLast name" + lastName.value
    + "\nDNI: "+ dni.value + "\nDate of birth: "+ birthdate.value +"\nTelephone: "+ tel.value + "\nAddress: "+ address.value+ "\nCity: "+ city.value + "\nPostal Code: " + zip.value + "\nEmail: "+ email.value 
     );
-    //I know that i'm not printing the password value. Even though it is on the problem. i believe is not ment for us to print it, if this is not the case, please let me know so I can correct it.
   }
   else{
-    alert("You have to correctly compelete all the fields to sign up");
+    alert("You have to correctly completed all the fields to sign up");
   }
+}
+
+submit.onclick = function (e) {
+  e.preventDefault();
+  if(firstNameValidator && lastNameValidator && dniValidator && birthdateValidator && telValidator && addressValidator && cityValidator && zipValidator && emailValidator && pwdValidator && pwd2Validator) {
+    var url="https://basp-m2022-api-rest-server.herokuapp.com/signup=?name="+email.value+"&lastName="+ lastName.value
+   + "&dni="+ dni.value + "&dob="+ birthdate.value +"&phone="+ tel.value + "&address="+ address.value+ "&city="+ city.value + "&zip=" + zip.value + "&email="+ email.value +"&password="+pwd.value;
+    apiRequest(url);
+    saveLocal();
+  } else {
+    alert("You have to correctly complete all the fields to sign up");
+  }
+}
+function apiRequest(url){
+  fetch(url)
+  .then(function(response){
+    return response.json();
+  })
+  //Lo que entra al segundo then es lo que devuelve el primero y así sucesivamente
+  .then(function(jsonResponse){
+    if (jsonResponse.success){
+    alert(jsonResponse.msg +"\n Sign up successfull");
+    }else{
+      alert(jsonResponse.msg+"\n Incorrect data");
+    }
+  })
+  .catch(function(patata){
+    alert(patata.msg);
+  })
+}
+function saveLocal(){
+  localStorage.setItem("firstName", firstName.value);
+  localStorage.setItem("lastName", lastName.value);
+  localStorage.setItem("dni", dni.value);
+  localStorage.setItem("birthdate", birthdate.value);
+  localStorage.setItem("tel", tel.value);
+  localStorage.setItem("address", address.value);
+  localStorage.setItem("city", city.value);
+  localStorage.setItem("zip", zip.value);
+  localStorage.setItem("email", email.value);
+}
+
+//The following function is to get the data previously storaged. BE AWARE this only is going to work in this case because the only way that the name was saved is if all the other values were saved to. If you want to make it more gral, please validate every other field is not null
+if(localStorage.getItem("name") !=null){
+firstName.value= localStorage.getItem("firstName");
+lastName.value=localStorage.getItem("lastName");
+dni.value=localStorage.getItem("dni");
+birthdate.value=localStorage.getItem("birthdate");
+tel.value=localStorage.getItem("tel");
+address.value=localStorage.getItem("address");
+city.value=localStorage.getItem("city");
+zip.value=localStorage.getItem("zip");
+email.value=localStorage.getItem("email");
 }
 //TODO: Change alert for modal, and with the accept button take the user to de Log in Page.
 //TODO: Try to use arrays to write less code. If it makes sense, because maybe later on with POO we can generalice some of the code...
