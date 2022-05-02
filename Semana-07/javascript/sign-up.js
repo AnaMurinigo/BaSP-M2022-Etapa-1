@@ -163,6 +163,7 @@ var email = document.getElementById("email");
 var emailError = document.querySelector(".email-error");
 var emailValidator=false;
 email.onfocus=emailFocus;
+email.onblur=emailBlur;
 function emailBlur() {
   emailValidator=false;
   if (email.value === "") {
@@ -292,24 +293,27 @@ function isLegal(something){
 }
 //SUBMIT BUTTON
 var submit=document.getElementById("submit-btn");
-submit.onclick=function(e){
-  e.preventDefault();
-  if(firstNameValidator && lastNameValidator && dniValidator && birthdateValidator && telValidator && addressValidator && cityValidator && zipValidator && emailValidator && pwdValidator && pwd2Validator){
-    alert("First name: " + firstName.value +
-    "\nLast name" + lastName.value
-   + "\nDNI: "+ dni.value + "\nDate of birth: "+ birthdate.value +"\nTelephone: "+ tel.value + "\nAddress: "+ address.value+ "\nCity: "+ city.value + "\nPostal Code: " + zip.value + "\nEmail: "+ email.value 
-    );
-  }
-  else{
-    alert("You have to correctly completed all the fields to sign up");
-  }
-}
+// submit.onclick=function(e){
+//   e.preventDefault();
+//   if(firstNameValidator && lastNameValidator && dniValidator && birthdateValidator && telValidator && addressValidator && cityValidator && zipValidator && emailValidator && pwdValidator && pwd2Validator){
+//     alert("First name: " + firstName.value +
+//     "\nLast name" + lastName.value
+//    + "\nDNI: "+ dni.value + "\nDate of birth: "+ birthdate.value +"\nTelephone: "+ tel.value + "\nAddress: "+ address.value+ "\nCity: "+ city.value + "\nPostal Code: " + zip.value + "\nEmail: "+ email.value 
+//     );
+//   }
+//   else{
+//     alert("You have to correctly completed all the fields to sign up");
+//   }
+// }
 
 submit.onclick = function (e) {
   e.preventDefault();
   if(firstNameValidator && lastNameValidator && dniValidator && birthdateValidator && telValidator && addressValidator && cityValidator && zipValidator && emailValidator && pwdValidator && pwd2Validator) {
-    var url="https://basp-m2022-api-rest-server.herokuapp.com/signup=?name="+email.value+"&lastName="+ lastName.value
-   + "&dni="+ dni.value + "&dob="+ birthdate.value +"&phone="+ tel.value + "&address="+ address.value+ "&city="+ city.value + "&zip=" + zip.value + "&email="+ email.value +"&password="+pwd.value;
+    var url="https://basp-m2022-api-rest-server.herokuapp.com/signup?name="+firstName.value+"&lastName="+ lastName.value+"&email="+ email.value 
+   + "&dni="+ dni.value + "&dob="+ birthdate.value +"&phone="+ tel.value + "&address="+ address.value+ "&city="+ city.value + "&zip=" + zip.value + "&password="+pwd.value;
+
+   
+  //  https://basp-m2022-api-rest-server.herokuapp.com/signup?name=pepe&lastName=laRana&email=email@test.com&dni=1234567&dob=03/10/1990&phone=1234567890&address=street%20123&city=rosario&zip=2000&password=Test123
     apiRequest(url);
     saveLocal();
   } else {
@@ -317,6 +321,7 @@ submit.onclick = function (e) {
   }
 }
 function apiRequest(url){
+  console.log(url);
   fetch(url)
   .then(function(response){
     return response.json();
@@ -324,16 +329,18 @@ function apiRequest(url){
   //Lo que entra al segundo then es lo que devuelve el primero y así sucesivamente
   .then(function(jsonResponse){
     if (jsonResponse.success){
+      console.log("entre");
     alert(jsonResponse.msg +"\n Sign up successfull");
     }else{
       alert(jsonResponse.msg+"\n Incorrect data");
     }
   })
-  .catch(function(patata){
-    alert(patata.msg);
+  .catch(function(error){
+    alert(error.msg);
   })
 }
 function saveLocal(){
+  console.log("Estoy localStorange");
   localStorage.setItem("firstName", firstName.value);
   localStorage.setItem("lastName", lastName.value);
   localStorage.setItem("dni", dni.value);
