@@ -84,6 +84,4 @@ window.onload=function(){
     })
   }
 }
-//TODO: See exactly the messages i have to print in the alerts
 //TODO: Change alert for modal, and -if the data is correct- take after 1 sec the user to the Home Page.
-//TODO: Leave the print password in the two alerts or neither one. 

@@ -394,6 +394,5 @@ window.onload = function () {
     pwd2.value = localStorage.getItem("pwd");
   }
 }
-//TODO: See exactly the messages i have to print in the alerts
 //TODO: Change alert for modal, and with the accept button take the user to de Log in Page.
 //TODO: Try to use arrays to write less code. If it makes sense, because maybe later on with POO we can generalice some of the code...
