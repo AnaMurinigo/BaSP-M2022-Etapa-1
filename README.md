@@ -18,3 +18,5 @@ This is the landing page of the project of the Radium Rocket bootcamp.
 [Ana Murinigo](https://github.com/AnaMurinigo)
 ## Technologies
 *HTML
+*CSS
+*JavaScript

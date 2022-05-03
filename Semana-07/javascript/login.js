@@ -58,7 +58,6 @@ window.onload=function(){
   submit.onclick = function (e) {
     e.preventDefault();
     if (emailValidator && pwdValidator) {
-      //alert("Email: " + email.value + "\nPassword: " + pwd.value);
       var url="https://basp-m2022-api-rest-server.herokuapp.com/login?email="+email.value+"&password="+ pwd.value;
       apiRequest(url);
       console.log(url);
@@ -71,7 +70,6 @@ window.onload=function(){
     .then(function(response){
       return response.json();
     })
-    //Lo que entra al segundo then es lo que devuelve el primero y así sucesivamente
     .then(function(jsonResponse){
       if (jsonResponse.success){
       alert(jsonResponse.msg +"\n Login successfull");
@@ -81,8 +79,8 @@ window.onload=function(){
         localStorage.setItem("Log-In", "Failed");
       }
     })
-    .catch(function(patata){
-      alert(patata.msg);
+    .catch(function(error){
+      alert(error.msg);
     })
   }
 }
