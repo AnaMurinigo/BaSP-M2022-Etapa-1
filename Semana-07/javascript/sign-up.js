@@ -308,33 +308,13 @@ window.onload = function () {
   submit.onclick = function (e) {
     e.preventDefault();
     //I want to do the onblur of every field, cause in other case I have to click every single one if they are already onload:
-    firstNameBlur();
-    lastNameBlur();
-    dniBlur();
-    birthdateBlur();
-    telBlur();
-    addressBlur();
-    cityBlur();
-    zipBlur();
-    emailBlur();
-    pwdBlur();
-    pwd2Blur();
+    firstNameBlur(); lastNameBlur(); dniBlur(); birthdateBlur(); telBlur(); addressBlur();
+    cityBlur(); zipBlur(); emailBlur(); pwdBlur(); pwd2Blur();
     if (
-      firstNameValidator &&
-      lastNameValidator &&
-      dniValidator &&
-      birthdateValidator &&
-      telValidator &&
-      addressValidator &&
-      cityValidator &&
-      zipValidator &&
-      emailValidator &&
-      pwdValidator &&
-      pwd2Validator
+      firstNameValidator && lastNameValidator && dniValidator && birthdateValidator && telValidator && addressValidator && cityValidator && zipValidator && emailValidator && pwdValidator && pwd2Validator
     ) {
       var url =
-        "https://basp-m2022-api-rest-server.herokuapp.com/signup?name=" +
-        firstName.value + 
+        "https://basp-m2022-api-rest-server.herokuapp.com/signup?name=" + firstName.value + 
         "&lastName=" + lastName.value + 
         "&email=" + email.value + 
         "&dni=" + dni.value + 
