@@ -340,7 +340,7 @@ window.onload=function(){
   }
   function saveLocal(data){
     console.log("Estoy saveLocal");
-    localStorage.getItem("id", data.id);
+    localStorage.setItem("id", data.id);
     localStorage.setItem("firstName", data.name);
     localStorage.setItem("lastName", data.lastName);
     localStorage.setItem("dni", data.dni);
@@ -364,8 +364,7 @@ window.onload=function(){
   zip.value=localStorage.getItem("zip");
   email.value=localStorage.getItem("email");
   pwd.value=localStorage.getItem("pwd");
-  }
-  pwd2.value=localStorage.getItem("pwd");
+  pwd2.value=localStorage.getItem("pwd");}
 }
 //TODO: See exactly the messages i have to print in the alerts
 //TODO: Change alert for modal, and with the accept button take the user to de Log in Page.
