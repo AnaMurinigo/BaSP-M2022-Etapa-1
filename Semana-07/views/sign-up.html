@@ -1,5 +1,4 @@
-<!-- 1.-Para el error no usaria un querySelector, usaria getElementById
-2.-Ver css de los errores -->
+<!--2.-Ver css de los errores -->
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -13,6 +12,7 @@
         <link rel="stylesheet" href="../styles/sign-up.css">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/bc0fdfbb9f.js" crossorigin="anonymous"></script>
+        <script src="../javascript/sign-up.js"></script>
     </head>
     <body>
         <header>
@@ -27,57 +27,57 @@
                 <div class="field">
                     <label>Name</label>
                     <input id="name" type="text" placeholder="Name">
-                    <p class="name-error error "></p>
+                    <p id="name-error" class="error"></p>
                 </div>
                 <div class="field">
                     <label>Last Name</label>
                     <input id="last-name" type="text" placeholder="Last Name">
-                    <p class="last-name-error error"></p>
+                    <p id="last-name-error" class="error"></p>
                 </div>
                 <div class="field">
                     <label>DNI</label>
                     <input id="dni" type="text" placeholder="DNI">
-                    <p class="dni-error error "></p>
+                    <p id="dni-error" class="error"></p>
                 </div>
                 <div class="field">
                     <label>Date of birth</label>
                     <input id="birthdate" type="date" placeholder="Date of birth">
-                    <p class="birthdate-error error "></p>
+                    <p id="birthdate-error" class="error"></p>
                 </div>
                 <div class="field">
                     <label>Telephone</label>
                     <input id="tel" type="text" placeholder="">
-                    <p class="tel-error"></p>
+                    <p id="tel-error" class="error"></p>
                 </div>
                 <div class="field">
                     <label>Address</label>
                     <input id="address" type="text" placeholder="Address">
-                    <p class="address-error error "></p>
+                    <p id="address-error" class="error"></p>
                 </div>
                 <div class="field">
                     <label>City</label>
                     <input id="city" type="text" placeholder="City">
-                    <p class="city-error error "></p>
+                    <p id="city-error" class="error"></p>
                 </div>
                 <div class="field">
                     <label>Postal code</label>
                     <input id="zip" type="text" placeholder="Postal code">
-                    <p class="zip-error error "></p>
+                    <p id="zip-error" class="error"></p>
                 </div>
                 <div class="field">
                     <label>Email</label>
                     <input id="email" type="email" placeholder="Email">
-                    <p class="email-error error "></p>
+                    <p id="email-error" class="error"></p>
                 </div>
                 <div class="field">
                     <label>Password</label>
                     <input id="pwd" type="password" placeholder="Password">
-                    <p class="pwd-error error "></p>
+                    <p id="pwd-error" class="error"></p>
                 </div>
                 <div class="field">
                     <label>Repeat your password</label>
                     <input id="pwd2" type="password" placeholder="Password">
-                    <p class="pwd2-error error "></p>
+                    <p id="pwd2-error" class="error"></p>
                 </div>
                 <div class="buttons">
                     <button class="cancel"><a href="index.html">Cancel</a></button>
@@ -90,6 +90,5 @@
                 <h3>Trackgenix &#174;</h3>
             </div>
         </footer>
-    <script src="../javascript/sign-up.js"></script>
     </body>
 </html>
